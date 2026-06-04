@@ -310,7 +310,7 @@ function App() {
   <h1 className='text-3xl text-white font-bold pt-10 px-10 items-center justify-center flex py-4'>Need a personal health plan?</h1>
   <p className='text-xl text-red-100 text-center '>Duis massa massa, mollis vel ullamcorper quis, finibus et urna. Aliquam ac eleifend metus. Ut sollicitudin risus ex</p>
 </div>
-{/* hdhdh */}
+
     </section >
   )
 }
