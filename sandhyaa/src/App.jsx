@@ -1,25 +1,17 @@
 import doctor from './assets/girl.png'
 import './App.css'
 import { CiClock2 } from "react-icons/ci";
+import { LiaPrayingHandsSolid } from "react-icons/lia";
 import { TbBellRinging } from "react-icons/tb";
 import { FaPhoneVolume } from "react-icons/fa6";
-  <div className='h-2/3 bg-blue-200 w-1/2 font-semibold px-5  flex flex-col items-center justify-center gap-3 '>
-            <div className="flex items-center gap-2">
-              <CiClock2 />
-              <h3>Working Hours</h3>
-            </div>
-            <p className='text-xl font-light py-3 px-2' > Monday – Friday :
-              8.00 – 19.00</p>
-            <p className='text-xl font-light  px-2'>
-              Saturday : 9.30 – 17.00</p>
-            <p className='text-xl font-light px-2'>
-              Sunday : 9.30 – 15.00</p>
-
-          </div>
+import { MdOutlineScreenSearchDesktop } from "react-icons/md";
+import { ImUserMinus } from "react-icons/im";
 import u from './assets/u.png'
 import img from './assets/surgery.png'
 import img2 from './assets/uniform.png'
 import img3 from './assets/chair.png'
+import { LiaTeethOpenSolid } from "react-icons/lia";
+import { GrUserPolice } from "react-icons/gr";
 
 function App() {
   return (
@@ -98,7 +90,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="h-screen w-full bg-gray-800 flex items-center justify-between px-10">
+      <div className="h-170 w-full bg-gray-800 flex items-center justify-between px-10">
 
 
         <div className="w-1/2 flex justify-start flex-col gap-10 ">
@@ -122,7 +114,7 @@ function App() {
         </div>
 
       </div>
-      <div className='h-120 relative w-full bg-blue-900  flex flex-col'>
+      <div className='h-120  relative w-full bg-blue-900  flex flex-col mt-10'>
         <div className='bg-black absolute  opacity-40 h-full w-full'></div>
         <h2 className='text-3xl text-white font-bold pt-10 px-10 items-center justify-center flex py-10'>
           Our Medical Departments
@@ -186,17 +178,138 @@ function App() {
           </div>
         </div>
       </div>
-      <div className='h-full w-full bg-gray-800 flex text-white '>
-        <p className='text-3xl text-white font-bold  px-10 items-center justify-center py-10'>Our Featured Services</p>
-       
-        <div className='h-2/4 bg-blue-200 w-1/4 font-semibold   items-center justify-center py-20 '>
-            <div className="flex items-center gap-2 ">
-           
-            </div>
-            
 
-          </div></div>
-    
+      <div className='w-full h-240 bg-white-800 '>
+        <h1 className='text-4xl hover:text-red-900 px-30 py-10'>Our Featured Services</h1>
+        <div className='flex gap-10 px-10 py-5">
+        '>
+        <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition duration-300'>
+            <div className='flex flex-col items-center'>
+
+             
+              <div className='flex items-center gap-3 mb-5 '>
+              <MdOutlineScreenSearchDesktop size={50} />
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+            Screen Exams
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+          <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition'>
+            <div className='flex flex-col items-center'>
+
+             
+              <div className='flex items-center gap-3 mb-5 '>
+              <LiaTeethOpenSolid size={50}/>
+             
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+           RMI Service
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+          <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition'>
+            <div className='flex flex-col items-center'>
+
+             
+              <div className='flex items-center gap-3 mb-5 '>
+              <GrUserPolice  size={50}/>
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+                  Free Checkups
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+         
+
+        </div>
+        <div className='flex gap-10 px-5 py-5'>
+          <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition'>
+            <div className='flex flex-col items-center'>
+
+             
+              <div className='flex items-center gap-3 mb-5 '>
+                <LiaPrayingHandsSolid size={50} />
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+                  Free Checkups
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+          <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition'>
+            <div className='flex flex-col items-center'>
+
+              {/* Icon and title in a row */}
+              <div className='flex items-center gap-3 mb-5 '>
+                <LiaPrayingHandsSolid size={50} />
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+                  Free Checkups
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+          <div className='bg-gray-200 h-90 w-1/3 flex items-center justify-center  hover:bg-blue-500 transition'>
+            <div className='flex flex-col items-center'>
+
+            
+              <div className='flex items-center gap-3 mb-5 '>
+                <LiaPrayingHandsSolid size={50} />
+                <p className='text-xl text-red-900 hover:text-green-900 font-semibold'>
+                  Free Checkups
+                </p>
+              </div>
+
+              <p className='text-sm text-gray-600  text-center '>
+                Hello everyone, this is a 5-day free checkup bootcamp in which we can
+                check your personal health, give medicine, as well as advice related to
+                health.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+<div className='h-120 w-full bg-blue-800'>
+  <h1 className='text-3xl text-white font-bold pt-10 px-10 items-center justify-center flex py-4'>Need a personal health plan?</h1>
+  <p className='text-xl text-red-100 text-center '>Duis massa massa, mollis vel ullamcorper quis, finibus et urna. Aliquam ac eleifend metus. Ut sollicitudin risus ex</p>
+</div>
 
     </section >
   )
