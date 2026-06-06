@@ -12,7 +12,10 @@ import img2 from './assets/uniform.png'
 import img3 from './assets/chair.png'
 import { LiaTeethOpenSolid } from "react-icons/lia";
 import { GrUserPolice } from "react-icons/gr";
-
+import immg from './assets/operation.png'
+import { BiPhoneCall } from "react-icons/bi";
+import { MdEmail } from "react-icons/md";
+import { IoLocation } from "react-icons/io5";
 function App() {
   return (
     <section className='h-screen w-screen'>
@@ -306,9 +309,140 @@ function App() {
         </div>
 
       </div>
-<div className='h-120 w-full bg-blue-800'>
-  <h1 className='text-3xl text-white font-bold pt-10 px-10 items-center justify-center flex py-4'>Need a personal health plan?</h1>
-  <p className='text-xl text-red-100 text-center '>Duis massa massa, mollis vel ullamcorper quis, finibus et urna. Aliquam ac eleifend metus. Ut sollicitudin risus ex</p>
+      <div className='h-120 w-full relative'>
+  <img
+    src={immg}
+    alt="image"
+    className="w-full h-full object-cover"
+  />
+<div className='bg-blue-700 absolute top-0 opacity-40 h-full w-full'>
+
+</div>
+
+  <div className='absolute inset-0 bg-black opacity-50'></div>
+
+  <div className='absolute inset-0 flex flex-col items-center justify-center text-center px-10'>
+    <h1 className='text-4xl font-bold text-white'>
+      Need a personal health plan?
+    </h1>
+
+    <p className='text-xl text-smokewhite mt-4 max-w-2xl'>
+      Duis massa massa, mollis vel ullamcorper quis, finibus et urna.
+      Aliquam ac eleifend metus. Ut sollicitudin risus ex.
+    </p>
+
+    <button className='mt-6 px-6 py-3 bg-yellow-500 text-white rounded-lg hover:bg-yellow-900 transition'>
+      Read More
+    </button>
+  </div>
+
+
+</div>
+<div className="bg-blue-900 text-white mt-10">
+  <div className="max-w-7xl mx-auto px-10 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    
+    <div>
+      <div className="w-52 h-24 bg-white flex flex-col items-center justify-center rounded">
+        <h1 className="text-3xl font-bold text-blue-700">
+          CareHeal
+        </h1>
+        <p className="text-sm text-black">
+          Health Care Centre
+        </p>
+      </div>
+
+      <p className="text-gray-300 mt-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum.
+      </p>
+
+      <div className="mt-6 space-y-4">
+        <div className="flex items-center gap-3">
+          <BiPhoneCall size={22} className="text-green-400" />
+          <span>9403003023</span>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <MdEmail size={22} className="text-green-400" />
+          <span>office@mail.com</span>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <IoLocation size={22} className="text-green-400" />
+          <span>Kathmandu, Nepal</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div>
+      <h2 className="text-xl font-bold mb-6">Useful Links</h2>
+
+      <ul className="space-y-3 text-gray-300">
+        <li className="hover:text-green-400 cursor-pointer">Testimonials</li>
+        <li className="hover:text-green-400 cursor-pointer">FAQ</li>
+        <li className="hover:text-green-400 cursor-pointer">Apply for a Job</li>
+        <li className="hover:text-green-400 cursor-pointer">Terms & Conditions</li>
+        <li className="hover:text-green-400 cursor-pointer">Our Partners</li>
+      </ul>
+    </div>
+
+    
+    <div>
+      <h2 className="text-xl font-bold mb-6">Services</h2>
+
+      <ul className="space-y-3 text-gray-300">
+        <li className="hover:text-green-400 cursor-pointer">Free Services</li>
+        <li className="hover:text-green-400 cursor-pointer">About Us</li>
+        <li className="hover:text-green-400 cursor-pointer">News</li>
+        <li className="hover:text-green-400 cursor-pointer">Contact</li>
+        <li className="hover:text-green-400 cursor-pointer">
+          Screening Program
+        </li>
+      </ul>
+    </div>
+
+    
+    <div>
+      <h2 className="text-xl font-bold mb-6">Latest News</h2>
+
+      <div className="space-y-6">
+        <div>
+          <p className="hover:text-green-400 cursor-pointer">
+            Aliquam ac eleifend metus
+          </p>
+          <span className="text-gray-400 text-sm">
+            March 10, 2018
+          </span>
+        </div>
+
+        <div>
+          <p className="hover:text-green-400 cursor-pointer">
+            Donec in libero sit amet mi vulputate
+          </p>
+          <span className="text-gray-400 text-sm">
+            March 10, 2018
+          </span>
+        </div>
+
+        <div>
+          <p className="hover:text-green-400 cursor-pointer">
+            Aliquam ac eleifend metus
+          </p>
+          <span className="text-gray-400 text-sm">
+            March 10, 2018
+          </span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  
+  <div className="border-t border-blue-700 py-5 text-center text-gray-400">
+    © 2026 CareHeal. All Rights Reserved.
+  </div>
 </div>
 
     </section >
